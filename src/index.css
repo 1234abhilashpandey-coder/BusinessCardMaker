@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  background-color: #101214;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #b08d57;
+  color: #101214;
+}
+
+/* subtle focus ring that matches the brass accent instead of the browser default blue */
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #b08d57;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-card,
+  #printable-card * {
+    visibility: visible;
+  }
+  #printable-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
