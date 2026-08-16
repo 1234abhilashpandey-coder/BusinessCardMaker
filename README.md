@@ -29,7 +29,7 @@ Then open http://localhost:3000.
 npm run build
 ```
 
-The optimized static site is output to `/build`.
+ The optimized static site is output to `/build`.
 
 ## Project structure
 
